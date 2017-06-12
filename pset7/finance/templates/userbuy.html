@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <form>
+        <fieldset>
+            <div class="form-group"><h2> Congratulations! You have purchased share with following information</h2>
+                <h3>symbol:{{quot}}</h3>
+                <h3>Name:{{name}}</h3>
+                <h3>Price:{{price}}</h3>
+                <h3>Quantity:{{quantity}}</h3>
+               
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}

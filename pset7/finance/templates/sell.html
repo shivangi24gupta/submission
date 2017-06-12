@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('sell') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <h3>Share Symbol:</h3>
+                <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text"/>
+            </div>
+            <h3> Want to Sell Shares:</h3>
+                <input autocomplete="off" type="number" min="1" autofocus class="form-control" name="quantity" placeholder="quantity" />
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Sell</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
